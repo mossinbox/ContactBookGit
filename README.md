@@ -1,6 +1,9 @@
 # ContactBookGit
 
+Authors:
+António Dias - 65225
 Lucas Andrade - 64583
+Afonso Lopes - 62499
 
 This is a starter kit for the first lab of the Software Engineering Course.
 Fork this project to make your own version of it.
