@@ -101,4 +101,15 @@ public class ContactBook {
         return contacts[currentContact++];
     }
 
+    public boolean checkComtacts() {
+        for(int i = 0;i<counter; i++){
+            Contact curent = contacts[i];
+            for (int j = i;j<counter; j++){
+                if(curent.getPhone() == contacts[j].getPhone())
+                    return true;
+            }
+        }
+        return false;
+    }
+
 }
