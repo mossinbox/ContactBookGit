@@ -63,7 +63,7 @@ public class Main {
                     getName(in, cBook);
                     break;
                 case CHECK_NUMBERS:
-                    //EP
+                    checkContacts(cBook);
                     break;
                 default:
                     System.out.println(COMMAND_ERROR);
@@ -171,6 +171,11 @@ public class Main {
         else System.out.println(result);
     }
 
-    //private static void awoifiofwa
+    private static void checkContacts(ContactBook cBook) {
+        if (cBook.checkContacts()) {
+            System.out.println(CONTACTS_SHARE_NUMBERS);
+        }
+        else Systemout.println(CONTACTS_HAVE_DIFFERENT_NUMBERS);
+    }
 
 }
