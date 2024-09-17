@@ -175,7 +175,7 @@ public class Main {
         if (cBook.checkContacts()) {
             System.out.println(CONTACTS_SHARE_NUMBERS);
         }
-        else Systemout.println(CONTACTS_HAVE_DIFFERENT_NUMBERS);
+        else System.out.println(CONTACTS_HAVE_DIFFERENT_NUMBERS);
     }
 
 }

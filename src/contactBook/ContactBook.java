@@ -61,9 +61,9 @@ public class ContactBook {
     }
 
     public String getName(int phone){
-        for(Contact c: contacts){
-            if(c.getPhone() == phone)
-                return c.getName();
+        for(int i = 0; i < counter; i++){
+            if(contacts[i].getPhone() == phone)
+                return contacts[i].getName();
         }
         return null;
     }
@@ -103,9 +103,9 @@ public class ContactBook {
 
     public boolean checkContacts() {
         for(int i = 0;i<counter; i++){
-            Contact curent = contacts[i];
-            for (int j = i;j<counter; j++){
-                if(curent.getPhone() == contacts[j].getPhone())
+            Contact current = contacts[i];
+            for (int j = 0;j<counter && j != i; j++){
+                if(current.getPhone() == contacts[j].getPhone())
                     return true;
             }
         }
