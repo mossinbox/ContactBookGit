@@ -102,9 +102,9 @@ public class ContactBook {
     }
 
     public boolean checkContacts() {
-        for(int i = 0;i<counter; i++){
+        for(int i = 0;i<counter-1; i++){
             Contact curent = contacts[i];
-            for (int j = i;j<counter; j++){
+            for (int j = i+1;j<counter; j++){
                 if(curent.getPhone() == contacts[j].getPhone())
                     return true;
             }
