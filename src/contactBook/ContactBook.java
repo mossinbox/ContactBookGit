@@ -101,7 +101,7 @@ public class ContactBook {
         return contacts[currentContact++];
     }
 
-    public boolean checkComtacts() {
+    public boolean checkContacts() {
         for(int i = 0;i<counter; i++){
             Contact curent = contacts[i];
             for (int j = i;j<counter; j++){
